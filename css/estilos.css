@@ -21,6 +21,9 @@ box-shadow: 0 0 30px rgba(0, .0, .0, 0.568);
     box-shadow: none;
     outline: none;
 }
+.form-control:focus::placeholder{
+   color: rgba(0, .0, .0, 0.1);
+}
 .form-control::placeholder{
     color: #ffff;
 }
@@ -36,4 +39,33 @@ box-shadow: 0 0 30px rgba(0, .0, .0, 0.568);
 }
 .ingresar:hover{
     color: white;
+}
+.olvide{
+    color: #ffff;
+    text-decoration-style:none;
+    text-decoration-line: none;
+}
+.olvide:hover{
+    color: #ffff;
+    text-decoration-style:none;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+
+.registro{
+    color: #ffff;
+    text-decoration-style:none;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: 700!important;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background:rgba(0, .0, .0, 0.5);
+}
+.registro:hover{
+    color: #ffff;
+    text-decoration-style:none;
+    text-decoration-line: none;
+    cursor: pointer;
 }
