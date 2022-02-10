@@ -1,0 +1,8 @@
+body{
+    background:  #ffe259;
+    background: linear-gradient(to right, #ffa751,#ffe259);
+}
+.bg{
+    background-image:  url(../img/FondoR2.jpg);
+    background-size: cover;
+}
