@@ -21,21 +21,25 @@
                  </div>
                  <h1 class="fw-bold text-center py-5">Registrate :)</h1>
                  <!--Registro-->
-                 <form action="#">
+                 <form action="#" method="post" onsubmit="return signup();">
                         <div class="form-row mb-4">
                             <div class="form-group2 col-md-8">
                                 <label class="font-weight-bold">Nombre<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control"placeholder="Nombre(s)">
+                                <input id="txt_name" type="text" class="form-control"placeholder="Nombre(s)">
+                                <p id="txt_nameM" class="alertwrong"></p>
                             </div>
                             <div class="form-group2 col-md-8">
                                 <label class="font-weight-bold">Apellidos<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control"placeholder="Apellidos">
+                                <input id="txt_apellido" type="text" class="form-control"placeholder="Apellidos">
+                                <p id="txt_apellidoM" class="alertwrong"></p>
                             </div>
                             <div class="form-group2 col-md-8 pt-4">
                                 <label class="font-weight-bold">Nombre de Usuario<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control"placeholder="Nombre de Usuario">
+                                <input id ="txt_user" type="text" class="form-control"placeholder="Nombre de Usuario">
+                                <p id="txt_userM" class="alertwrong"></p>
                                 <br>
-                                <p>Fecha de nacimiento: <input type="date" name="fecha" max="2021-09-09"></p>
+                                <p>Fecha de nacimiento: <input id="txt_fecha" type="date" name="fecha" max="2022-01-01"></p>
+                                <p id="txt_fechaM" class="alertwrong"></p>
                                 <p>Sexo:
                                   <input type="radio" name="hm" value="h"> Hombre
                                   <input type="radio" name="hm" value="m"> Mujer
@@ -44,22 +48,25 @@
                                 <div class="form-group2 mb-3">
                                     <div class="col-md-12">
                                         <label for="email" class="form-label ft-bold">Correo Electonico<span class="text-danger">*</span></label>
-                                        <input type="email" name="Email" size="40" class="form-control"placeholder="Email">
+                                        <input id="txt_email" type="email" name="Email" size="40" class="form-control"placeholder="Email">
+                                        <p id="txt_emailM" class="alertwrong"></p>
                                     </div>
                                         <div class="col-md-8 pt-3">
                                             <label for="Contraseña" class="ft-bold">Contraseña<span class="text-danger">*</span></label>
-                                            <input type="password" class="form-control"placeholder="Crear Contraseña">
+                                            <input id="txt_Ccontra" type="password" class="form-control"placeholder="Crear Contraseña">
+                                            <p id="txt_CcontraM" class="alertwrong"></p>
                                             <label class="font-weight-bold">Confirmar Contraseña<span class="text-danger">*</span></label>
-                                            <input type="password" class="form-control"placeholder="Confirmar Contraseña">
+                                            <input id="txt_contra" type="password" class="form-control"placeholder="Confirmar Contraseña">
+                                            <p id="txt_contraM" class="alertwrong"></p>
                                         </div>
                                     </br>                                    
                                     <form action="GET"> 
-                                        <input type="file" name="Archivo" id="imagen">
+                                        <input type="file" name="Archivo" id="imagen" accept="img/*" required>
+                                        <p id="imagenM" class="alertwrong"></p>
                                       </form>
                                     </br>
                                 </br>
-                                    <button type="button" class="btn btn-secondary">Registrate</button>
-                                   <!-- <a href="/Inicio.html"><input class="btn btn-secondary" type="button" value="Cancelar"></a>-->
+                                    <button type="submit" class="btn btn-secondary">Registrate</button>
                                     <a href="/Inicio.html"><button type="button" class="btn btn-secondary">Cancelar</button></a>
                             </div>
                  </form>
@@ -70,5 +77,4 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/Registro.js"></script>
 </body>
-
 </html>
