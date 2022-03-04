@@ -6,3 +6,14 @@ body{
     background-image:  url(../img/FondoR2.jpg);
     background-size: cover;
 }
+.Tam{
+    font-size: 25px;
+}
+.INS{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+.INS:hover{
+    color: #ffe259;
+    font-family: 'Roboto', sans-serif;
+}

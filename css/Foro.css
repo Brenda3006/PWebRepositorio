@@ -87,6 +87,15 @@ footer{
     background-color: gray;
 }
 
+.INS{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+a:hover{
+    color: #ffe259;
+    font-family: 'Roboto', sans-serif;
+}
+
 /*RESPONSIVE DESIGN*/
 @media screen and (max-width: 820px) {
     
